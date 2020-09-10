@@ -8,7 +8,7 @@
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
     <body style='margin : 0px; overflow: hidden;'>
-        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers  scale="2 2 2" -->
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
         <a-assets>
@@ -21,8 +21,8 @@
 
         <a-marker id="animated-marker" type='barcode' value='7'>
             <a-entity
-                gltf-model="#animated-asset"
-                scale="2 2 2">
+                obj-model=”obj: url(https://raw.githubusercontent.com/bardionson/bardionson.github.io/master/ar-playground/models/n-ra.obj);
+             >
             </a-entity>
         </a-marker>
 
