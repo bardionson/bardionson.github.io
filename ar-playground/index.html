@@ -17,7 +17,7 @@
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/bardionson/bardionson.github.io/master/ar-playground/models/n-ra.gltf"></a-asset-item>
-            <video id="vid" src="gasmaskcolab-8663354-8522792-7073367.mp4" loop="true" crossorigin></video>
+            <video id="vid" autoplay="true" src="gasmaskcolab-8663354-8522792-7073367.mp4" loop="true"></video>
             <video id="what-car" autoplay="true" loop="true" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"></video>
         </a-assets>
             
@@ -29,7 +29,7 @@
 
         <a-marker type='barcode' value='7'>
             <a-entity scale="1 1 1" rotation="-90 0 0">
-                <a-video play-on-scan src="#what-car"></a-video>
+                <a-video play-on-scan src="#vid"></a-video>
             </a-entity>
         </a-marker>
 
