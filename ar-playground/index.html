@@ -16,13 +16,20 @@
         <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
         <a-assets>
-            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/bardionson/bardionson.github.io/master/ar-playground/models/n-ra.gltf"></a-asset-item>
+            <a-asset-item id="nra" src="https://raw.githubusercontent.com/bardionson/bardionson.github.io/master/ar-playground/models/n-ra.gltf"></a-asset-item>
             <video id="vid" autoplay="true" src="gasmaskcolab-8663354-8522792-7073367.mp4" loop="true"></video>
             <!-- video id="what-car" autoplay="true" loop="true" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"></video -->
         </a-assets>
             
             
 
+        <a-marker type='barcode' value='5'>
+            <a-entity 
+                obj-model=”obj: url(./models/n-ra.obj); 
+                mtl: url(./models/n-ra.mtl)”>
+            </a-entity>
+        </a-marker>
+            
         <a-marker type='barcode' value='6'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
